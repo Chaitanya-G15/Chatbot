@@ -1,0 +1,40 @@
+# ============================================================
+# HVAC Technician Copilot — Python Dependencies
+# ============================================================
+# Install with: pip install -r requirements.txt
+
+# --- PDF Extraction ---
+pymupdf==1.24.3          # PyMuPDF: fast PDF text + metadata extraction
+pdfplumber==0.11.0       # Table extraction from PDFs
+pytesseract==0.3.10      # OCR for scanned/image-based PDFs
+Pillow==10.3.0           # Image processing (required by pytesseract)
+
+# --- Text Processing ---
+tiktoken==0.7.0          # Token counting (OpenAI-compatible, used for chunk sizing)
+regex==2024.4.28         # Advanced regex for HVAC term preservation
+
+# --- Utilities ---
+python-dotenv==1.0.1     # Load .env files
+tqdm==4.66.4             # Progress bars for pipeline runs
+colorama==0.4.6          # Colored terminal output (Windows-safe)
+
+# ============================================================
+# Member 2 — Embeddings & Vector DB (uncomment when working on Step 4)
+# ============================================================
+# chromadb==0.5.3
+# sentence-transformers==3.0.1
+# google-generativeai==0.7.0   # Or: google-genai
+
+# ============================================================
+# Member 3 — Backend API (uncomment when working on Steps 5-6)
+# ============================================================
+# fastapi==0.111.0
+# uvicorn[standard]==0.30.1
+# pydantic==2.7.1
+# google-genai==0.5.0
+
+# ============================================================
+# Member 4 — Deployment (uncomment when working on Steps 11-12)
+# ============================================================
+# gunicorn==22.0.0
+# python-multipart==0.0.9

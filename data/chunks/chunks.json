@@ -1,0 +1,359 @@
+[
+  {
+    "chunk_id": "carrier_hi_wall_qhf_series_1434506032_p2_c0_b5d39b",
+    "text": "6.1 Wrench torque sheet for installation ........................................................................................... 14 \n6.2 Connecting the cables ................................................................................................................ 14 \n6.3 Pipe length and the elevation ..................................................................................................... 15 \n6.4 Installation for the first time \n......................................................................................................... 16",
+    "token_count": 55,
+    "metadata": {
+      "source_file": "Carrier Hi-Wall QHF series-1434506032.pdf",
+      "brand": "Carrier",
+      "model": "QHF",
+      "doc_type": "service_manual",
+      "version": "",
+      "page_number": 2,
+      "section": "5.2 Outdoor Unit",
+      "content_type": "text",
+      "chunk_index": 0,
+      "total_chunks_in_doc": 21
+    }
+  },
+  {
+    "chunk_id": "carrier_hi_wall_qhf_series_1434506032_p2_c1_b5d39b",
+    "text": "6.1 Wrench torque sheet for installation ........................................................................................... 14 \n6.2 Connecting the cables ................................................................................................................ 14 \n6.3 Pipe length and the elevation ..................................................................................................... 15 \n6.4 Installation for the first time \n......................................................................................................... 16 6.5 Adding the refrigerant after running the system for many years ................................................ 18 \n6.6 Re-installation while the indoor unit need to be repaired ........................................................... 19 \n6.7 Re-installation while the outdoor unit need to be repaired ......................................................... 21",
+    "token_count": 114,
+    "metadata": {
+      "source_file": "Carrier Hi-Wall QHF series-1434506032.pdf",
+      "brand": "Carrier",
+      "model": "QHF",
+      "doc_type": "service_manual",
+      "version": "",
+      "page_number": 2,
+      "section": "5.2 Outdoor Unit",
+      "content_type": "text",
+      "chunk_index": 1,
+      "total_chunks_in_doc": 21
+    }
+  },
+  {
+    "chunk_id": "carrier_hi_wall_qhf_series_1434506032_p8_c2_1a69b1",
+    "text": "Model | W | D | H\n42QHF025 | 800 | 188 | 275\n42QHF036 / 42QHF050 | 940 | 205 | 275\n42QHF060 / 42QHF065 | 1045 | 235 | 315\n42QHF080 | 1260 | 363 | 283",
+    "token_count": 77,
+    "metadata": {
+      "source_file": "Carrier Hi-Wall QHF series-1434506032.pdf",
+      "brand": "Carrier",
+      "model": "QHF",
+      "doc_type": "service_manual",
+      "version": "",
+      "page_number": 8,
+      "section": "1.1 Safety Precaution",
+      "content_type": "table",
+      "chunk_index": 2,
+      "total_chunks_in_doc": 21
+    }
+  },
+  {
+    "chunk_id": "carrier_hi_wall_qhf_series_1434506032_p9_c3_154720",
+    "text": "Model | W | D | H | W1 | A | B\n38QHF025 | 780 | 250 | 540 | 843 | 549 | 276\n38QHF036 / 38QHF050 | 810 | 310 | 558 | 877 | 549 | 325\n38QHF060 | 845 | 320 | 700 | 908 | 560 | 335\n38QHF065 / 38QHF080 | 900 | 315 | 860 | 980 | 590 | 333",
+    "token_count": 118,
+    "metadata": {
+      "source_file": "Carrier Hi-Wall QHF series-1434506032.pdf",
+      "brand": "Carrier",
+      "model": "QHF",
+      "doc_type": "service_manual",
+      "version": "",
+      "page_number": 9,
+      "section": "1.1 Safety Precaution",
+      "content_type": "table",
+      "chunk_index": 3,
+      "total_chunks_in_doc": 21
+    }
+  },
+  {
+    "chunk_id": "carrier_hi_wall_qhf_series_1434506032_p14_c4_10bbcc",
+    "text": "Outside diameter |  | Torque | Additional tightening torque\nmm | inch | N.cm | N.cm\nФ6.35 | 1/4 | 1500(153kgf.cm) | 1600(163kgf.cm)\nФ9.52 | 3/8 | 2500(255kgf.cm) | 2600(265kgf.cm)\nФ12.7 | 1/2 | 3500(357kgf.cm) | 3600(367kgf.cm)\nФ15.9 | 5/8 | 4500(459kgf.cm) | 4700(479kgf.cm)\nФ19 | 3/4 | 6500(663kgf.cm) | 6700(683kgf.cm)",
+    "token_count": 165,
+    "metadata": {
+      "source_file": "Carrier Hi-Wall QHF series-1434506032.pdf",
+      "brand": "Carrier",
+      "model": "QHF",
+      "doc_type": "service_manual",
+      "version": "",
+      "page_number": 14,
+      "section": "6.2 Connecting the cables",
+      "content_type": "table",
+      "chunk_index": 4,
+      "total_chunks_in_doc": 21
+    }
+  },
+  {
+    "chunk_id": "carrier_hi_wall_qhf_series_1434506032_p14_c5_79e75f",
+    "text": "Model | Rated(max) current of appliance(A)\nQHF025 / QHF036 | 11.5\nQHF050 | 12.5\nQHF060 / QHF065 | 14.5\nQHF080 | 16.0",
+    "token_count": 53,
+    "metadata": {
+      "source_file": "Carrier Hi-Wall QHF series-1434506032.pdf",
+      "brand": "Carrier",
+      "model": "QHF",
+      "doc_type": "service_manual",
+      "version": "",
+      "page_number": 14,
+      "section": "6.2 Connecting the cables",
+      "content_type": "table",
+      "chunk_index": 5,
+      "total_chunks_in_doc": 21
+    }
+  },
+  {
+    "chunk_id": "carrier_hi_wall_qhf_series_1434506032_p15_c6_0d8857",
+    "text": "Model | Pipe size |  | Minimum\nlength\n(m) | Standard\nlength\n(m) | Charge\nless\nLength | Max.\nElevation\nB (m) | Max.\nLength\nA (m) | Additional\nrefrigerant\n(g/m)\n | Gas | Liquid |  |  |  |  |  | \n42QHF025 + 38QHF025 | 3/8''\n(Ф9.52) | 1/4''\n(Ф6.35) | 3 | 5 | 5 | 8 | 20 | 15\n42QHF036 + 38QHF036 | 1/2''\n(Ф12.7) | 1/4''\n(Ф6.35) | 3 | 5 | 5 | 8 | 20 | 15\n42QHF050 + 38QHF050 |  |  | 3 | 5 | 5 | 10 | 25 | 15\n42QHF060 + 38QHF060 | 5/8''\n(Ф15.9) | 3/8''\n(Ф9.52) | 3 | 5 | 5 | 10 | 25 | 30\n42QHF065 + 38QHF065 |  |  | 3 | 5 | 5 | 10 | 25 | 30\n42QHF080 + 38QHF080 |  |  | 3 | 5 | 5 | 10 | 25 | 30",
+    "token_count": 328,
+    "metadata": {
+      "source_file": "Carrier Hi-Wall QHF series-1434506032.pdf",
+      "brand": "Carrier",
+      "model": "QHF",
+      "doc_type": "service_manual",
+      "version": "",
+      "page_number": 15,
+      "section": "6.3 Pipe length and the elevation",
+      "content_type": "table",
+      "chunk_index": 6,
+      "total_chunks_in_doc": 21
+    }
+  },
+  {
+    "chunk_id": "carrier_hi_wall_qhf_series_1434506032_p25_c7_9ee4b9",
+    "text": "Temperature\nMode | Cooling operation | Heating operation\nRoom temperature | 18℃~32℃ | 0℃~27℃\nOutdoor temperature | -10℃~46℃ | -15℃～24℃",
+    "token_count": 51,
+    "metadata": {
+      "source_file": "Carrier Hi-Wall QHF series-1434506032.pdf",
+      "brand": "Carrier",
+      "model": "QHF",
+      "doc_type": "service_manual",
+      "version": "",
+      "page_number": 25,
+      "section": "7. Operation Characteristics",
+      "content_type": "table",
+      "chunk_index": 7,
+      "total_chunks_in_doc": 21
+    }
+  },
+  {
+    "chunk_id": "carrier_hi_wall_qhf_series_1434506032_p26_c8_59894f",
+    "text": "| DEFROST indication lamp(For cooling & heating models only): Lights up\nwhen the air conditioner starts defrosting automatically or when the warm air\ncontrol feature is activated in heating operation.\n | OPERATION indication lamp：This lamp illuminates when the air conditioner is in\noperation.\n | TIMER indication lamp：Lights up during Timer operation.\n | Temperature indicator：Displays the temperature settings when the air conditioner\nis operational. Displays the malfunction code.",
+    "token_count": 90,
+    "metadata": {
+      "source_file": "Carrier Hi-Wall QHF series-1434506032.pdf",
+      "brand": "Carrier",
+      "model": "QHF",
+      "doc_type": "service_manual",
+      "version": "",
+      "page_number": 26,
+      "section": "8.2 Display function",
+      "content_type": "table",
+      "chunk_index": 8,
+      "total_chunks_in_doc": 21
+    }
+  },
+  {
+    "chunk_id": "carrier_hi_wall_qhf_series_1434506032_p28_c9_144217",
+    "text": "Fault temp.\nsensor | Operation in cooling,\ndrying and fan only mode | Operation in heating mode\nT1 | Run supposed T1=26℃\nhigh fan speed | Run supposed T1=26℃ medium fan speed\nT2 | Normal | During the first 1 minute of compressor operation, indoor\nfan shuts off. After that, indoor fan runs at medium fan\nspeed for 1 minute and then resume to the setting fan\nspeed.\nT3 | Run with compressor\nfrequency≤F14 | 3 minutes' defrosting every 40 minutes when T4<7℃; 2\nminutes' defrosting every 90 minutes when T4≥7℃.\nT4 | Run supposed T4=50℃ | Run supposed T4=15℃\nTP | Run supposed T4=50℃ | Run supposed T4=15℃",
+    "token_count": 188,
+    "metadata": {
+      "source_file": "Carrier Hi-Wall QHF series-1434506032.pdf",
+      "brand": "Carrier",
+      "model": "QHF",
+      "doc_type": "service_manual",
+      "version": "",
+      "page_number": 28,
+      "section": "8.2 Display function",
+      "content_type": "table",
+      "chunk_index": 9,
+      "total_chunks_in_doc": 21
+    }
+  },
+  {
+    "chunk_id": "carrier_hi_wall_qhf_series_1434506032_p35_c10_5f0242",
+    "text": "Indoor fan speed | Maximum frequency\nHigh speed/8 degree heating/ turbo function | No limit\nMedium speed | FHeatMaxMidFan\nLow speed/sleep mode | FHeatMaxLowFan\nSilent mode | Fixed at F3",
+    "token_count": 50,
+    "metadata": {
+      "source_file": "Carrier Hi-Wall QHF series-1434506032.pdf",
+      "brand": "Carrier",
+      "model": "QHF",
+      "doc_type": "service_manual",
+      "version": "",
+      "page_number": 35,
+      "section": "8.4 Operation Modes and Functions",
+      "content_type": "table",
+      "chunk_index": 10,
+      "total_chunks_in_doc": 21
+    }
+  },
+  {
+    "chunk_id": "carrier_hi_wall_qhf_series_1434506032_p42_c11_ca9f4e",
+    "text": "Operation lamp | Timer lamp | Display | LED STATUS\n☆ 1 time | X | E0 | Indoor unit EEPROM parameter error\n☆ 2 times | X | E1 | Indoor / outdoor units communication error\n☆ 3 times | X | E2 | Zero crossing signal detection error\n☆ 4 times | X | E3 | Indoor fan speed has been out of control\n☆ 5 times | X | E4 | Open circuit or short circuit of indoor room temperature T1\nsensor\n☆ 6 times | X | E5 | Open circuit or short circuit of evaporator coil temperature T2\nsensor\n☆ 7 times | X | EC | Refrigerant Leakage Detection\n☆ 1 time | O | E0 | Current overload protection\n☆ 2 times | O | F1 | Open circuit or short circuit of outdoor ambient T4 temperature\nsensor\n☆ 3 times | O | F2 | Open circuit or short circuit of condenser coil temperature T3\nsensor\n☆ 4 times | O | F3 | Open circuit or short circuit of compressor discharge T5\ntemperature sensor\n☆ 5 times | O | F4 | Outdoor unit EEPROM parameter error\n☆ 6 times | O | F5 | Outdoor fan speed has been out of control\n☆ 1 times | ☆ | P0 | IPM malfunction or IGBT over-strong current protection\n☆ 2 times | ☆ | P1 | Over voltage or over low voltage protection\n☆ 3 times | ☆ | P2 | High temperature protection of compressor top diagnosis and\nsolution\n☆ 5 times | ☆ | P4 | Inverter compressor drive error",
+    "token_count": 339,
+    "metadata": {
+      "source_file": "Carrier Hi-Wall QHF series-1434506032.pdf",
+      "brand": "Carrier",
+      "model": "QHF",
+      "doc_type": "service_manual",
+      "version": "",
+      "page_number": 42,
+      "section": "Operation lamp | Timer lamp | Display | LED STATUS",
+      "content_type": "table",
+      "chunk_index": 11,
+      "total_chunks_in_doc": 21
+    }
+  },
+  {
+    "chunk_id": "carrier_hi_wall_qhf_series_1434506032_p47_c12_510834",
+    "text": "Index2: \n1: Indoor AC Fan Motor \nPower on and set the unit running in fan mode at high fan speed. After running for 15 seconds, \nmeasure the voltage of pin1 and pin2. If the value of the voltage is less than 100V(208~240V power \nsupply)or 50V(115V power supply), the PCB must has problems and need to be replaced.",
+    "token_count": 86,
+    "metadata": {
+      "source_file": "Carrier Hi-Wall QHF series-1434506032.pdf",
+      "brand": "Carrier",
+      "model": "QHF",
+      "doc_type": "service_manual",
+      "version": "",
+      "page_number": 47,
+      "section": "9.2 Diagnosis and Solution",
+      "content_type": "text",
+      "chunk_index": 12,
+      "total_chunks_in_doc": 21
+    }
+  },
+  {
+    "chunk_id": "carrier_hi_wall_qhf_series_1434506032_p47_c13_cd0ff1",
+    "text": "2. Indoor or Outdoor DC Fan Motor (control chip is in fan motor) \nPower on and when the unit is in standby, measure the voltage of pin1-pin3, pin4-pin3 in fan motor \nconnector. If the value of the voltage is not in the range showing in below table, the PCB must has \nproblems and need to be replaced.",
+    "token_count": 74,
+    "metadata": {
+      "source_file": "Carrier Hi-Wall QHF series-1434506032.pdf",
+      "brand": "Carrier",
+      "model": "QHF",
+      "doc_type": "service_manual",
+      "version": "",
+      "page_number": 47,
+      "section": "9.2 Diagnosis and Solution",
+      "content_type": "text",
+      "chunk_index": 13,
+      "total_chunks_in_doc": 21
+    }
+  },
+  {
+    "chunk_id": "carrier_hi_wall_qhf_series_1434506032_p48_c14_e48eac",
+    "text": "NO. | Color | Signal | Voltage\n1 | Red | Vs/Vm | 280V~380V\n2 | --- | --- | ---\n3 | Black | GND | 0V\n4 | White | Vcc | 14-17.5V\n5 | Yellow | Vsp | 0~5.6V\n6 | Blue | FG | 14-17.5V",
+    "token_count": 85,
+    "metadata": {
+      "source_file": "Carrier Hi-Wall QHF series-1434506032.pdf",
+      "brand": "Carrier",
+      "model": "QHF",
+      "doc_type": "service_manual",
+      "version": "",
+      "page_number": 48,
+      "section": "9.2 Diagnosis and Solution",
+      "content_type": "table",
+      "chunk_index": 14,
+      "total_chunks_in_doc": 21
+    }
+  },
+  {
+    "chunk_id": "carrier_hi_wall_qhf_series_1434506032_p56_c15_caa0e9",
+    "text": "Temperature (℃) | 5 | 10 | 15 | 20 | 25 | 30 | 40 | 50 | 60\nResistance Value (KΩ) | 26.9 | 20.7 | 16.1 | 12.6 | 10 | 8 | 5.2 | 3.5 | 2.4",
+    "token_count": 81,
+    "metadata": {
+      "source_file": "Carrier Hi-Wall QHF series-1434506032.pdf",
+      "brand": "Carrier",
+      "model": "QHF",
+      "doc_type": "service_manual",
+      "version": "",
+      "page_number": 56,
+      "section": "9.2 Diagnosis and Solution",
+      "content_type": "table",
+      "chunk_index": 15,
+      "total_chunks_in_doc": 21
+    }
+  },
+  {
+    "chunk_id": "carrier_hi_wall_qhf_series_1434506032_p56_c16_6367a6",
+    "text": "Temperature (℃) | 5 | 15 | 25 | 35 | 60 | 70 | 80 | 90 | 100\nResistance Value (KΩ) | 141.6 | 88 | 56.1 | 36.6 | 13.8 | 9.7 | 6.9 | 5 | 3.7",
+    "token_count": 81,
+    "metadata": {
+      "source_file": "Carrier Hi-Wall QHF series-1434506032.pdf",
+      "brand": "Carrier",
+      "model": "QHF",
+      "doc_type": "service_manual",
+      "version": "",
+      "page_number": 56,
+      "section": "9.2 Diagnosis and Solution",
+      "content_type": "table",
+      "chunk_index": 16,
+      "total_chunks_in_doc": 21
+    }
+  },
+  {
+    "chunk_id": "carrier_hi_wall_qhf_series_1434506032_p57_c17_78f214",
+    "text": "Position | Resistance Value at 20℃ |  |  | \nUnit Model\n(Compressor) | 38QHF025/38QHF036\n(ASN98D22UFZ) | 38QHF050\n(DA130M1C-31FZ) | 38QHF060/38QHF065\n(DA150S1C-20FZ) | 38QHF080\n(DA250S2C-30MT)\nBlue - Red | 1.57Ω | 1.77Ω | 0.95Ω | 0.55Ω\nBlue - Black |  |  |  | \nRed - Blue |  |  |  |",
+    "token_count": 153,
+    "metadata": {
+      "source_file": "Carrier Hi-Wall QHF series-1434506032.pdf",
+      "brand": "Carrier",
+      "model": "QHF",
+      "doc_type": "service_manual",
+      "version": "",
+      "page_number": 57,
+      "section": "2. Compressor checking",
+      "content_type": "table",
+      "chunk_index": 17,
+      "total_chunks_in_doc": 21
+    }
+  },
+  {
+    "chunk_id": "carrier_hi_wall_qhf_series_1434506032_p57_c18_1c3914",
+    "text": "| Model |  |  | QHF025 | QHF036 / QHF050 |  | QHF060 |  | QHF065 |  |  | QHF080\n |  |  |  |  |  |  |  |  |  |  |  | WZDK58-38G\n(☆)\n | Indoor fan motor |  |  | RPG20E | RPG28D |  | RPG45C |  | RPG45C |  |  | \n |  |  |  |  |  |  |  |  |  |  |  | \n |  |  |  | WZDK36-38G-W | WZDK40-38G-W-1\n(★) |  |  |  |  |  |  | WZDK72-38G\n(☆)\n | Outdoor fan motor |  |  |  |  |  | YDK53-6F |  | YDK100-6T |  |  | \n |  |  |  | (★) |  |  |  |  |  |  |  | \n |  |  |  |  |  |  |  |  |  |  |  |",
+    "token_count": 270,
+    "metadata": {
+      "source_file": "Carrier Hi-Wall QHF series-1434506032.pdf",
+      "brand": "Carrier",
+      "model": "QHF",
+      "doc_type": "service_manual",
+      "version": "",
+      "page_number": 57,
+      "section": "2. Compressor checking",
+      "content_type": "table",
+      "chunk_index": 18,
+      "total_chunks_in_doc": 21
+    }
+  },
+  {
+    "chunk_id": "carrier_hi_wall_qhf_series_1434506032_p58_c19_863f92",
+    "text": "Position | Resistance Value at 20℃ |  | \nIDU Model\n(Motor Model) | 42QHF025\n(RPG20E) | 42QHF036/42QHF050\n(RPG28D) | 42QHF060/42QHF065\n(RPG45C)\nBlack - Red | 430Ω±8%\n(Brand: Broad ocean)\n388Ω±8%\n(Brand: Weiling) | 270Ω±8%\n(Brand: Broad ocean)\n260Ω±8%\n(Brand: Weiling) | 170Ω±8%\n(Brand: Weiling)\nWhite - Black | 370Ω±8%\n(Brand: Broad ocean)\n360Ω±8%\n(Brand: Weiling) | 350Ω±8%\n(Brand: Broad ocean)\n385Ω±8%\n(Brand: Weiling) | 140Ω±8%\n(Brand: Weiling)",
+    "token_count": 205,
+    "metadata": {
+      "source_file": "Carrier Hi-Wall QHF series-1434506032.pdf",
+      "brand": "Carrier",
+      "model": "QHF",
+      "doc_type": "service_manual",
+      "version": "",
+      "page_number": 58,
+      "section": "2. Compressor checking",
+      "content_type": "table",
+      "chunk_index": 19,
+      "total_chunks_in_doc": 21
+    }
+  },
+  {
+    "chunk_id": "carrier_hi_wall_qhf_series_1434506032_p58_c20_56675f",
+    "text": "Position | Resistance Value at 20℃ | \nODU Model\n(Motor Model) | 38QHF060\n(YDK53-6F) | 38QHF065\n(YDK100-6T)\nBlack - Red | 90Ω±8%\n(Brand: Broad ocean)\n100Ω±8%\n(Brand: Weiling) | 65Ω±8%\n(Brand: Weiling)\nWhite - Black | 140Ω±8%\n(Brand: Broad ocean)\n150Ω±8%\n(Brand: Weiling) | 55Ω±8%\n(Brand: Weiling)",
+    "token_count": 133,
+    "metadata": {
+      "source_file": "Carrier Hi-Wall QHF series-1434506032.pdf",
+      "brand": "Carrier",
+      "model": "QHF",
+      "doc_type": "service_manual",
+      "version": "",
+      "page_number": 58,
+      "section": "2. Compressor checking",
+      "content_type": "table",
+      "chunk_index": 20,
+      "total_chunks_in_doc": 21
+    }
+  }
+]
