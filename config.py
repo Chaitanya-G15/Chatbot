@@ -42,7 +42,7 @@ class Config:
     # Member 2 — Embeddings & Vector DB
     # -----------------------------------------------------------------
     GOOGLE_API_KEY: str = os.getenv("GOOGLE_API_KEY", "")
-    EMBEDDING_MODEL: str = os.getenv("EMBEDDING_MODEL", "models/text-embedding-004")
+    EMBEDDING_MODEL: str = os.getenv("EMBEDDING_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
     CHROMA_DB_DIR: Path = PROJECT_ROOT / os.getenv("CHROMA_DB_DIR", "data/chroma_db")
     CHROMA_COLLECTION: str = os.getenv("CHROMA_COLLECTION", "hvac_manuals")
 

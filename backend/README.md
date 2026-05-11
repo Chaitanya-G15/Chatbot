@@ -1,113 +1,79 @@
-# Member 3 — Backend API & RAG Pipeline
+# Step 4 — Embedding & Vector Database Pipeline
 
-**Your job:** Build the FastAPI backend that accepts user queries, retrieves
-relevant chunks from ChromaDB (Member 2's output), and generates answers
-via Gemini (or another LLM).
+This directory contains the embedding generation and vector database pipeline for the HVAC Technician Copilot. 
 
----
+## Project Structure
 
-## Prerequisites
-
-Member 2 must have populated `data/chroma_db/` before you can run queries.
-
----
-
-## Setup
-
-```powershell
-venv\Scripts\activate
-# Uncomment Member 3 deps in requirements.txt, then:
-pip install fastapi "uvicorn[standard]" pydantic google-genai python-dotenv
+```bash
+backend/
+│
+├── app/
+│   ├── embeddings/
+│   │   ├── embedder.py     # SentenceTransformers wrapper
+│   │   ├── ingest.py       # Batch ingestion of chunks to ChromaDB
+│   │   ├── retriever.py    # Semantic search with metadata filtering
+│   │   └── vectordb.py     # ChromaDB client and connection handler
+│   │
+│   └── main.py             # Minimal FastAPI structure ready for Step 5
+│
+└── README.md
 ```
 
-Set in `.env`:
-```
-GOOGLE_API_KEY=your_key_here
-LLM_MODEL=gemini-2.0-flash
-TOP_K_RESULTS=5
-BACKEND_HOST=0.0.0.0
-BACKEND_PORT=8000
-```
+## Setup Instructions
 
----
+1. Ensure you have completed **Step 3 (Chunking)** so that `data/chunks/chunks.json` exists.
+2. Install the requirements (from the project root):
+   ```bash
+   pip install -r requirements.txt
+   ```
+   *(Ensure `chromadb` and `sentence-transformers` are uncommented).*
 
-## What to Build
+## 1. Ingest Data (Embed + Save to ChromaDB)
 
-Create `backend/app.py` — a FastAPI app with these endpoints:
+To read all chunks, generate embeddings, and save them to the persistent ChromaDB collection, run the ingestion script from the project root:
 
-### `POST /query`
-```json
-// Request
-{
-  "question": "What does error code E01 mean on a Carrier 50XC?",
-  "brand": "Carrier",       // optional filter
-  "model": "50XC",          // optional filter
-  "top_k": 5                // optional, default from config
-}
-
-// Response
-{
-  "answer": "Error E01 on the Carrier 50XC indicates...",
-  "sources": [
-    {
-      "chunk_id": "carrier_50xc_service_manual_p12_c3_ab1234",
-      "source_file": "Carrier_50XC_ServiceManual.pdf",
-      "page_number": 12,
-      "section": "Error Codes",
-      "score": 0.92
-    }
-  ],
-  "conversation_id": "..."
-}
+```bash
+python -m backend.app.embeddings.ingest
 ```
 
-### `GET /health`
-```json
-{ "status": "ok", "chunks_in_db": 1247 }
+This will:
+- Load the chosen embedding model (`sentence-transformers/all-MiniLM-L6-v2` by default).
+- Read batches from `data/chunks/chunks.json`.
+- Compute vector embeddings.
+- Upsert into `data/chroma_db`.
+
+## 2. Retrieve Data (Semantic Search)
+
+To test the retrieval pipeline, you can run the example retrieval script:
+
+```bash
+python -m backend.app.embeddings.retriever
 ```
 
-### `POST /ingest` (optional — trigger pipeline re-run)
-Calls `pipeline/ingest.py` programmatically.
+This simulates a user query and returns the `top_k` most relevant text chunks using semantic similarity, returning metadata such as the `brand`, `model`, `doc_type`, and `page_number`.
 
----
+### Using Metadata Filters Programmatically
 
-## RAG Prompt Template
+You can easily apply filters based on metadata fields. Example usage in Python:
 
 ```python
-SYSTEM_PROMPT = """
-You are an expert HVAC technician assistant. Answer questions based ONLY on
-the provided manual excerpts. Always cite the source document and page number.
-If the answer is not in the excerpts, say "I couldn't find this in the manuals."
-"""
+from backend.app.embeddings.retriever import Retriever
 
-def build_prompt(question: str, chunks: list[dict]) -> str:
-    context = "\n\n---\n\n".join(
-        f"[Source: {c['metadata']['source_file']}, Page {c['metadata']['page_number']}]\n{c['text']}"
-        for c in chunks
-    )
-    return f"{SYSTEM_PROMPT}\n\nContext:\n{context}\n\nQuestion: {question}\nAnswer:"
+retriever = Retriever()
+results = retriever.retrieve(
+    query="How to fix low refrigerant pressure?",
+    top_k=3,
+    filters={"brand": "Daikin", "doc_type": "service_manual"}
+)
+
+for res in results:
+    print(res["text"])
 ```
 
----
+## FastAPI Server (Ready Structure)
 
-## CORS Configuration
+A basic structure is provided in `backend/app/main.py`. You can start it via:
 
-Enable CORS for Member 4's frontend:
-```python
-from fastapi.middleware.cors import CORSMiddleware
-app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
+```bash
+uvicorn backend.app.main:app --reload
 ```
-
----
-
-## Start the Server
-
-```powershell
-python backend/app.py
-# or
-uvicorn backend.app:app --host 0.0.0.0 --port 8000 --reload
-```
-
----
-
-*Refer to `config.py` for `CHROMA_DB_DIR`, `CHROMA_COLLECTION`, `LLM_MODEL`, `TOP_K_RESULTS`.*
