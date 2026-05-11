@@ -199,11 +199,14 @@ def print_stats(chunks: list[dict]):
     for i, chunk in enumerate(chunks[:3]):
         meta = chunk["metadata"]
         preview = chunk["text"][:150].replace("\n", " ")
-        print(f"\n  [{i+1}] {chunk['chunk_id']}")
+        # Encode to ASCII-safe for Windows terminals (cp1252 can't handle all Unicode)
+        safe_preview = preview.encode("ascii", errors="replace").decode("ascii")
+        safe_id      = chunk['chunk_id'].encode("ascii", errors="replace").decode("ascii")
+        print(f"\n  [{i+1}] {safe_id}")
         print(f"       Brand: {meta.get('brand')} | Model: {meta.get('model')} "
               f"| Page: {meta.get('page_number')} | Tokens: {chunk['token_count']}")
         print(f"       Section: {meta.get('section')}")
-        print(f"       Preview: \"{preview}...\"")
+        print(f"       Preview: \"{safe_preview}...\"")
 
     print(bold("\n" + "="*60))
     print(green("  chunks.json is ready for Member 2 (Embeddings & Vector DB)!"))
@@ -272,6 +275,22 @@ def main():
         return
 
     print(f"\n  Processing {len(pdf_files)} PDF(s)...")
+
+    # Deduplicate by file size — skip files that are byte-for-byte identical
+    # to an already-seen file (e.g. "manual (1).pdf" vs "manual.pdf")
+    seen_sizes: dict[int, str] = {}
+    unique_pdf_files = []
+    for pdf in pdf_files:
+        size = pdf.stat().st_size
+        if size in seen_sizes:
+            print(yellow(
+                f"  Skipping duplicate: {pdf.name} "
+                f"(same size as {seen_sizes[size]}, treating as identical file)"
+            ))
+        else:
+            seen_sizes[size] = pdf.name
+            unique_pdf_files.append(pdf)
+    pdf_files = unique_pdf_files
 
     # Process each PDF
     for pdf_path in pdf_files:

@@ -87,11 +87,36 @@ _HEADER_FOOTER_PATTERNS = [
     re.compile(r'^\s*(https?://\S+|www\.\S+)\s*$', re.MULTILINE),
     # Catalog/form numbers: "Form 12345-67"
     re.compile(r'^\s*Form\s+\d+[\-\s]?\d*\s*$', re.MULTILINE | re.IGNORECASE),
+    # TOC leader dots: sequences of 3+ dots (with optional spaces) used to
+    # align page numbers in a table of contents, e.g. "Section 1 .............. 14"
+    re.compile(r'\.{3,}', re.MULTILINE),
 ]
 
 # ------------------------------------------------------------------
 # Public API
 # ------------------------------------------------------------------
+
+# Pattern: a line that is ONLY a TOC entry —
+# "<section name> <dots> <page number>" with nothing else meaningful.
+# Matches lines like: "6.1 Installation ............. 14"
+_RE_TOC_LINE = re.compile(
+    r'^[\w\s\.\-,/()]{3,80}\.{3,}\s*\d+\s*$', re.MULTILINE
+)
+
+
+def _is_toc_block(text: str) -> bool:
+    """
+    Return True if this block is entirely a Table of Contents page —
+    i.e., every non-empty line is a TOC entry (section name + dots + page num).
+    Such blocks have no semantic value for RAG retrieval.
+    """
+    lines = [l.strip() for l in text.splitlines() if l.strip()]
+    if not lines:
+        return False
+    toc_line_count = sum(1 for l in lines if _RE_TOC_LINE.match(l))
+    # If 60%+ of lines look like TOC entries, treat the whole block as TOC noise
+    return toc_line_count / len(lines) >= 0.6
+
 
 def clean_block(block: dict) -> dict | None:
     """
@@ -105,6 +130,10 @@ def clean_block(block: dict) -> dict | None:
     """
     content_type = block.get("content_type", "text")
     text = block.get("text", "")
+
+    # Discard entire TOC pages before any other cleaning
+    if content_type != "table" and _is_toc_block(text):
+        return None
 
     if content_type == "table":
         text = _clean_table(text)
